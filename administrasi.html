@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrasi - AgriManage</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>AgriManage</h1>
+        <nav>
+            <ul>
+                <li><a href="./beranda.html">Beranda</a></li>
+                <li><a href="./ppkl.html">PPKL</a></li>
+                <li><a href="./administrasi.html">Administrasi</a></li>
+                <li><a href="./analisis_data.html">Analisis Data</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article>
+            <h2>Administrasi</h2>
+            <p>
+                Halaman ini berisi informasi
+                administrasi manajemen data lahan
+                dan tanaman.
+            </p>
+        </article>
+
+<section class="admin-form-section">
+            <h2>Formulir Administrasi</h2>
+            <form id="form-administrasi">
+                <fieldset>
+                    <legend>Data Administrasi Lahan</legend>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nama-lahan">Nama Lahan</label>
+                            <input type="text" id="nama-lahan" placeholder="Contoh: Lahan Melati" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lokasi-lahan">Lokasi Lahan</label>
+                            <input type="text" id="lokasi-lahan" placeholder="Contoh: Banyuwangi" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="luas-lahan">Luas Lahan (Ha)</label>
+                            <input type="number" id="luas-lahan" placeholder="Contoh: 2.5" min="0.01" step="any" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jenis-tanaman">Jenis Tanaman</label>
+                            <select id="jenis-tanaman" required>
+                                <option value="">Pilih jenis tanaman</option>
+                                <option value="Padi">Padi</option>
+                                <option value="Jagung">Jagung</option>
+                                <option value="Kedelai">Kedelai</option>
+                                <option value="Cabai">Cabai</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tanggal-tanam">Tanggal Penanaman</label>
+                            <input type="date" id="tanggal-tanam" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="status-lahan">Status Lahan</label>
+                            <select id="status-lahan" required>
+                                <option value="">Pilih status lahan</option>
+                                <option value="Aktif">Aktif</option>
+                                <option value="Dalam Perawatan">Dalam Perawatan</option>
+                                <option value="Tidak Aktif">Tidak Aktif</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit">Simpan Data</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Rekapitulasi Administrasi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th><th>Nama Lahan</th><th>Lokasi</th><th>Luas (Ha)</th>
+                        <th>Jenis Tanaman</th><th>Tanggal Tanam</th><th>Status</th><th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="tabel-administrasi"></tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sistem Manajemen Data Lahan dan Tanaman. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="./assets/js/main.js"></script>
+
+</body>
+</html>

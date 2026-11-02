@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Data - AgriManage</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>AgriManage</h1>
+        <nav>
+            <ul>
+                <li><a href="./beranda.html">Beranda</a></li>
+                <li><a href="./ppkl.html">PPKL</a></li>
+                <li><a href="./administrasi.html">Administrasi</a></li>
+                <li><a href="./analisis_data.html">Analisis Data</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article>
+            <h2>Analisis Data</h2>
+            <p>
+                Halaman ini berisi analisis data terkait
+                pemantauan dan perawatan lahan.
+            </p>
+        </article>
+
+        <section>
+            <h2>Ringkasan Statistik</h2>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Total Lahan</h3>
+                    <p id="total-lahan">0</p>
+                </article>
+
+                <article class="card">
+                    <h3>Total Luas Lahan</h3>
+                    <p id="total-area">0 Ha</p>
+                </article>
+
+                <article class="card">
+                    <h3>Jenis Tanaman</h3>
+                    <p id="total-tanaman">0</p>
+                </article>
+
+                <article class="card">
+                    <h3>Lahan Aktif</h3>
+                    <p id="lahan-aktif">0</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hasil Analisis Data</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jenis Tanaman</th>
+                        <th>Jumlah Lahan</th>
+                        <th>Total Luas (Ha)</th>
+                    </tr>
+                </thead>
+
+                <tbody id="hasil-analisis">
+                    <!-- Hasil analisis ditampilkan melalui JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Visualisasi Data</h2>
+            <div id="visualisasi-data">
+                <!-- Grafik akan ditampilkan melalui JavaScript -->
+            </div>
+        </section>
+
+        <article>
+            <h2>Kesimpulan Analisis</h2>
+            <p id="kesimpulan-analisis">
+                Kesimpulan akan ditampilkan berdasarkan data lahan.
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AgriManage</p>
+    </footer>
+
+    <script type="module" src="./assets/js/analysis.js"></script>
+
+</body>
+</html>
